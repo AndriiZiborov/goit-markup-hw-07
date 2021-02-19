@@ -1,4 +1,3 @@
-/* контейнер для размера блоков */
 
 .container {
     /* outline: 1px solid tomato; */
@@ -8,5 +7,10 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+
+    footer & {
+      display: flex;
+      align-items: baseline;     
+    }
   }
   

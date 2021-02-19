@@ -5,10 +5,25 @@
   
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    border-bottom-color: #ececec;
+    border-bottom-color: hsl(0, 0%, 93%);
+
+    & a {
+      display: inline-block;
+      text-decoration: none;
+      }
+
+      .link {
+        padding-top: 32px;
+        padding-bottom: 28px;
+    
+        &:hover,
+        &:focus {
+          color: var(--accent-color);  
+        }
+      }
   }
-  
-  
+
+
   .nav-site > a {
     color: var(--primary-text-color);
     font-family: Raleway, sans-serif;
@@ -19,11 +34,7 @@
     letter-spacing: 0.03em;
   }
   
-  .header a {
-  
-    display: inline-block;
-    text-decoration: none;
-  }
+
   
   .nav-site,
   .contacts {
@@ -40,23 +51,29 @@
   
   .nav-site-link {
     margin-right: 50px;
-  }
-  
-  .nav-site-link:last-child,
-  .contacts-item:last-child {
-    margin-right: 0;
+
+    &:last-child{
+      margin-right: 0;
+    }
   }
   
   .block-contacts {
     margin-left: auto;
-   
   }
+
+  .contacts {
+    color: var(--second-text-color);
+  }
+  
   
   .contacts-item {
     margin-right: 50px;
     display: inline-flex;
     align-items: center;
-    
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
   
   .contacts-icon {
@@ -75,57 +92,43 @@
   
   
   
-  
   /* =========== Полоска ============== */
   .portfolio {
   position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 98.5%;
+      left: 0;
+      width: 100%;
+      height: 4px;
+  
+      border-radius: 2px;
+      background-color: var(--accent-color);
+    }
   }
   
-  .portfolio::after {
-    position: absolute;
-    content: "";
-    top: 98.5%;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    
-    
-    
-    border-radius: 2px;
-    background-color: var(--accent-color);
-  }
+
   
   .studio {
     position: relative;
-  }
-  
-  .studio::after {
-    position: absolute;
-    top: 98.5%;
-    left: 0;  
-    content: "";
-  
-    width: 100%;
-    height: 4px;
-    /* display: block; */
-    border-radius: 2px;
-    background-color: var(--accent-color);
-  }
-  
-  
-  
-  .header .link:hover,
-  .header .link:focus {
-    color: var(--accent-color);
+
+    &::after {
+      position: absolute;
+      top: 98.5%;
+      left: 0;  
+      content: "";
     
+      width: 100%;
+      height: 4px;
+      /* display: block; */
+      border-radius: 2px;
+      background-color: var(--accent-color);
+    }
   }
   
-  .contacts {
-    color: var(--second-text-color);
-  }
+
   
-  .header .link {
-    
-    padding-top: 32px;
-    padding-bottom: 28px;
-  }
+
+  

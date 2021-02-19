@@ -12,19 +12,19 @@
     line-height: 1.16;
     text-align: center;
   }
+
   .activity-container-item {
     position: relative;
     width: calc((100% - 60px) / 3);
-  
-  }
-  
-  .activity-container-item:not(:last-child) {
-    margin-right: 30px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }  
   }
   
   /*============= Оверлэй на чем мы занимаемся ===========*/
   .activity-container-text {
-    content: "";
+    
     position: absolute; 
     bottom: 0;
     display: inline-block;
