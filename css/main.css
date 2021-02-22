@@ -58,7 +58,6 @@ img {
 }
 
 .container {
-  /* outline: 1px solid tomato; */
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -397,10 +396,6 @@ address {
   color: var(--accent-color);
 }
 
-.join-block {
-  margin-right: 93px;
-}
-
 .join-block .item-link {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
@@ -479,6 +474,10 @@ address {
 
 .join-block-button-thumb {
   position: relative;
+}
+
+.join-block:not(:last-child) {
+  margin-right: 93px;
 }
 
 .background {

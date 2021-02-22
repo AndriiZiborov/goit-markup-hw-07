@@ -1,5 +1,6 @@
 
 footer {
+  
     padding-top: 60px;
     padding-bottom: 60px;
   
@@ -10,6 +11,7 @@ footer {
       text-decoration: none;
     }
   }
+  
   
   
   .adress-block {
@@ -38,7 +40,6 @@ footer {
   }
   
 
-  
   .adress-link {
     color: var(--transparent-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -49,8 +50,7 @@ footer {
     }
   }
   
-  .join-block  {
-    margin-right: 93px;
+  .join-block {  
 
      .item-link {
       color: #ffffff;
@@ -111,4 +111,9 @@ footer {
    .join-block-button-thumb {
      position: relative;
    }
+  
+   .join-block:not(:last-child) {
+     margin-right: 93px;
+   }
+
   
